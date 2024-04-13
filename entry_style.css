@@ -1,0 +1,245 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css?family=Barlow");
+
+/* Global styles */
+body {
+  background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Barlow", sans-serif;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Animation delay */
+h1.main,
+p.demos {
+  animation-delay: 10s;
+}
+
+/* Container styles */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+/* Content styles */
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Heading styles */
+.container h2 {
+  position: absolute;
+  top: 50%;
+  line-height: 100px;
+  height: 90px;
+  margin-top: -50px;
+  font-size: 90px;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  animation: blurFadeInOut 1.5s ease-in backwards;
+}
+
+/* Individual frame delay */
+.container h2.frame-1 {
+  animation-delay: 0s;
+}
+
+.container h2.frame-2 {
+  animation-delay: 1.5s;
+}
+
+.container h2.frame-3 {
+  animation-delay: 3s;
+}
+
+.container h2.frame-4 {
+  font-size: 200px;
+  animation-delay: 4.5s;
+}
+
+.container h2.frame-5 {
+  animation: none;
+  color: transparent;
+  text-shadow: 0 0 1px #fff;
+}
+
+.container h2.frame-5 span {
+  animation: blurFadeIn 1.5s ease-in 6s backwards;
+  color: transparent;
+  text-shadow: 0 0 1px #fff;
+}
+
+.container h2.frame-5 span:nth-child(2) {
+  animation-delay: 6.5s;
+}
+
+.container h2.frame-5 span:nth-child(3) {
+  animation-delay: 7s;
+}
+
+/* Globe styles */
+.globe {
+  position: absolute;
+  width: 282px;
+  height: 273px;
+  left: 50%;
+  top: 50%;
+  margin: -137px 0 0 -141px;
+  background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png)
+    no-repeat top left;
+  animation: fadeInBack 3.6s linear 4s backwards;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  transform: scale(5);
+}
+
+/* Link container styles */
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90vh;
+}
+
+/* Circle link styles */
+.circle-link {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 50%;
+  opacity: 0; 
+}
+
+.circle-link:hover {
+  background: linear-gradient(to right, #8ea6b9, #05030e);
+  color: #fff;
+}
+
+/* New keyframe animation for fadeInRotate */
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5) rotate(0deg);
+  }
+}
+
+/* Adjust animation delay for .circle-link */
+.container.h2.frame-5 {
+  animation: none; /* Remove animation for .frame-5 */
+}
+
+.circle-link {
+  animation: fadeInRotate 1.2s linear 7s forwards; /* Adjust animation delay and keep it visible */
+}
+
+/* Keyframe animations */
+@keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 40px #fff;
+    transform: scale(1.3);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0 0 1px #fff;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1; /* Keep the opacity at 1 to make it stay visible */
+    text-shadow: 0 0 1px #fff;
+    transform: scale(1);
+  }
+}
+
+@keyframes blurFadeIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 40px #fff;
+    transform: scale(1.3);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0 0 10px #fff;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 1px #fff;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInBack {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(5);
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .container h2 {
+    font-size: 50px; /* Adjusted font size for smaller screens */
+  }
+
+  .container h2.frame-4 {
+    font-size: 120px;
+  }
+
+  .circle-link {
+    width: 70px;
+    height: 70px;
+    font-size: 9px;
+    letter-spacing: normal;
+  }
+}

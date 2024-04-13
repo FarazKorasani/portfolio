@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>
+
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rotating Navigation</title>
+</head>
+
+
+
+<body>
+  <!-- -----------home---------- -->
+  <div id="home">
+
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="h1-and-small-container">
+          <h1>Faraz Korasan<span class="color-in-large-devices">i</span></h1>
+          <small>Developer & Designer based in Australia</small>
+        </div>
+        <div class="first-page-ps-and-img">
+          <p class="hide-in-large-devices">
+            As Dostoevsky best said it in his White Nights: “how could one
+            live and have no story to tell?!”
+          </p>
+          <img src="images/Faraz.photo.mediaquery.png" alt="designer homepage photo" class="faraz-homepage-photo" />
+          <p>
+            <span class="show-in-large-devices">As Dostoevsky best said it in his White Nights: “how could one live
+              and have no story to tell?!”</span> I am here not only to tell my story but also help others tell theirs,
+            and wouldn't that be quite a story itself?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-user-alt"></i><a href="#about"> About</a></li>
+        <li><i class="fas fa-briefcase"></i><a href="#portfoio"> Work</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#contact"> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- -----------about---------- -->
+  <div id="about">
+    <div class="about-row">
+      <div class="about-col-1">
+        <img src="images/aboutMe.jpg" alt="designer about-me photo" class="about-me-photo" />
+      </div>
+      <div class="about-col-2">
+        <div class="dummy-container-subtitle">
+          <h1 class="about-sub-title">About Me ✓</h1>
+        </div>
+        <p class="about-col-2-p">
+          A self-taught developer and designer, deeply interested in
+          philosophy and the arts, with 19+ years of teaching experience in the ESL
+          and EFL industries, I am ready to start a new
+          journey.
+        </p>
+        <div class="history-container">
+          <div class="about-tab-titles">
+            <p class="about-tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="about-tab-links" onclick="opentab('experience')">
+              Experience
+            </p>
+            <p class="about-tab-links" onclick="opentab('education')">
+              Education
+            </p>
+          </div>
+          <div class="about-tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Web Development</span><br />HTML, CSS, JavaScript, C#, React, Git/GitHub
+              </li>
+              <li>
+                <span>Multimedia Design</span><br />Adobe Photoshop, FlexClip, Figma, P5.js
+              </li>
+              <li><span>Game Development</span><br />Unreal Engine 5</li>
+            </ul>
+          </div>
+          <div class="about-tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Mar 2019 – Mar 2024</span><br />ESL Teacher at ILSC
+                Sydney
+              </li>
+              <li>
+                <span>Jan 2019 – Feb 2019</span><br />ESL Teacher at IH
+                Sydney
+              </li>
+              <li>
+                <span>Aug 2011 – Aug 2018</span><br />ESL Teacher at Tehran
+                Institute of Technology
+              </li>
+            </ul>
+          </div>
+          <div class="about-tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2019</span><br />Cambridge CELTA (pass B) –
+                International House Sydney
+              </li>
+              <li><span>2016</span><br />GRE 320 (verbal full score) - ETS</li>
+              <li>
+                <span>2009</span><br />
+                Associate Degree in English Literature – Allameh Tabataba’i
+                University
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------portfolio------------ -->
+  <div id="portfoio" class="portfolio">
+    <div class="container">
+      <div class="dummy-container-subtitle">
+        <h1 class="sub-title">My Work ✓</h1>
+      </div>
+      <div class="work-list">
+        <div class="work">
+          <img class="work-image" src="images/work1.jpg" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="entry_index.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img class="work-image" src="images/work2.jpg" />
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img class="work-image" src="images/work3.jpg" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work hidden">
+          <img class="work-image" src="images/work4.jpg" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="sine_wave_index.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work hidden">
+          <img class="work-image" src="images/work5.jpg" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="figma_index.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work hidden">
+          <img class="work-image" src="images/work6.jpg" />
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>
+              The app connects you yo the talented people around the world.
+              Download it from play store.
+            </p>
+            <a href="marshmallow_index.html"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <button class="btn-see-more">See More</button>
+    </div>
+  </div>
+
+  <!-- ----------contact------------- -->
+  <div id="contact" class="contact">
+    <div class="contact-row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="email"><i class="fas fa-envelope"></i> faraz.korasani@gmail.com</div>
+        <div class="phone-number"><i class="fas fa-phone-square-alt"></i> +61 451 287 563</div>
+        <a href="images/resume-faraz.pdf" download class="cv">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" class="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="msg"></div>
+
+    <div class="copyright">
+      <p>
+        Copyright © Powered by Questions</i>
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

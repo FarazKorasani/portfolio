@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrain</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <script src="p5.js"></script>
+    <script src="CCapture.all.min.js"></script>
+    <script src="webm-writer-0.2.0.js"></script>
+    <script src="sine_wave_script.js"></script>
+    <script>
+        var capturer = new CCapture({
+            format: "webm",
+            framerate: 60,
+            verbose: true,
+        });
+    </script>
+</body>
+</html>

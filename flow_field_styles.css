@@ -1,0 +1,15 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  max-width: 100vw; /* Limit canvas width to maximum of 100vw */
+  max-height: 100vh; /* Limit canvas height to maximum of 100vh */
+  width: 100%;
+  height: 100%;
+}
+

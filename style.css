@@ -296,6 +296,7 @@ nav a:hover {
 .layer h3 {
   font-weight: 500;
   margin-bottom: 20px;
+  /* jadid below */
 }
 
 .layer a {
@@ -311,13 +312,10 @@ nav a:hover {
   text-align: center;
 }
 
-/* .work:hover img {
-  transform: scale(1.1);
+.layer h3, .layer p{
+  /* jadid below */
+  color: white;
 }
-
-.work:hover .layer {
-  height: 100%;
-} */
 
 .mobile-touchmove-image{
   transform: scale(1.1);
@@ -754,6 +752,14 @@ nav a:hover {
   
   .work:hover .layer {
     height: 100%;
+  }
+
+  .layer h3{
+    font-size: 30px;
+  }
+
+  .layer p{
+    font-size: 15px;
   }
 
   .btn-see-more {

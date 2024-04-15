@@ -317,6 +317,10 @@ nav a:hover {
   color: white;
 }
 
+.layer p{
+  text-wrap: balance;
+}
+
 .mobile-touchmove-image{
   transform: scale(1.1);
 }

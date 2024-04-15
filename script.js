@@ -69,7 +69,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      msg.innerHTML = "Message sent successfully";
+      msg.innerHTML = "message sent successfully";
       setTimeout(function () {
         msg.innerHTML = "";
       }, 5000);

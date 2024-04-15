@@ -410,7 +410,7 @@ nav a:hover {
 #msg {
   color: #61b752;
   margin-top: 10px;
-  margin-left: 85px;
+  text-align: center;
 }
 
 .copyright {
@@ -637,11 +637,8 @@ nav a:hover {
   }
 
   #msg {
-    color: #61b752;
-    margin-top: 10px;
-    margin-left: 1380px;
+    font-size: 20px;
   }
-  
 }
 
 /* ---------Largest Devices-------- */
@@ -851,9 +848,7 @@ nav a:hover {
   }
 
   #msg {
-    color: #61b752;
-    margin-top: 10px;
-    margin-left: 1380px;
+    font-size: 25px;
   }
   
 }

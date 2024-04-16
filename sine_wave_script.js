@@ -1,5 +1,3 @@
-let start = 0;
-
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
     pixelDensity(1);
@@ -14,7 +12,8 @@ function draw() {
     stroke(255);
     strokeWeight(3);
 
-    translate(0, -100, -800);
+    translate(0, -100, isMobile() ? -2500 : -800); 
+    
     rotateX(50);
 
     for (let n = 0; n < 50; n++) {
@@ -34,10 +33,12 @@ function draw() {
         }
         endShape(CLOSE);
     }
-
-    start += 0.05;
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
+}
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }

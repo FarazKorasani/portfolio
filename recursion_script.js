@@ -2,7 +2,7 @@ let increment = 0;
 let rectanglesStore = [];
 
 function setup() {
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(windowWidth, windowHeight);
   rectMode(CENTER);
   let test = new Rectangles();
   rectanglesStore.push(test);

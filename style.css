@@ -297,7 +297,6 @@ nav a:hover {
 .layer h3 {
   font-weight: 500;
   margin-bottom: 20px;
-  /* jadid below */
 }
 
 .layer a {
@@ -314,7 +313,6 @@ nav a:hover {
 }
 
 .layer h3, .layer p{
-  /* jadid below */
   color: white;
 }
 
@@ -764,11 +762,11 @@ nav a:hover {
   }
 
   .layer h3{
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .layer p{
-    font-size: 15px;
+    font-size: 22px;
   }
 
   .btn-see-more {
